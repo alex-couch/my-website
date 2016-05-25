@@ -1,0 +1,46 @@
+body{
+	background-color: #FFF0BD;
+	color: #FF3D3D;
+}
+
+.main{
+	text-align: center;
+}
+
+h1{
+	font-size: 35px;
+}
+
+p{
+	font-size: 30px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar{
+	font-size: 25px;
+	border-bottom: 1px solid #ff3d3d;
+}
+
+a, a:focus, a:visited{
+	color: #ff3d3d;
+	background-color: #fff0bd;
+	text-decoration: none;
+	border-bottom: 1px dotted #ff3d3d;
+}
+
+a:hover{
+	color: #FF9C9C;
+	border: none;
+}
+
+ul{
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+li{
+	display: inline;
+	padding: 20px;
+}
