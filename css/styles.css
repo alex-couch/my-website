@@ -1,0 +1,62 @@
+@media screen and (min-width: 480px){
+  .main{
+    background-color: #009;
+    padding-bottom: 500px;
+  }
+
+  .header{
+    display: block;
+    font-size: 36px;
+    font-family: "Comic Sans";
+    color: #ddd;
+    background-color: #00d;
+    text-align: center;
+    margin: 55px -15px 0 -15px;
+  }
+
+  .navbar-blue{
+    border-radius: 0px !important;
+    border-color: none !important;
+    border-bottom-color: #005 !important;
+  }
+
+  .navbar-nav{
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .navbar-nav > li{
+    float: none !important;
+    display: inline-block !important;
+  }
+
+  .active, .navbar-blue > ul li{
+    background-color: #007 !important;
+  }
+
+  .navbar-nav > li:hover a:hover, li:focus a:focus, li:active a:active, li:active a:active{
+    background-color: #06f !important;
+  }
+
+  .navbar-brand, .nav.navbar-nav li a{
+    color: #ddd !important;
+  }
+
+  .dropdown-toggle, .dropdown-toggle:visited{
+    background-color: #009 !important;
+  }
+
+  .dropdown-toggle:active, .dropdown-toggle:hover, .dropdown-toggle:link{
+    background-color: #06f !important;
+  }
+
+  .dropdown-menu{
+    color: #ddd !important;
+    background-color: #06f !important;
+    box-shadow: 5px 5px 5px #000 !important;
+  }
+
+  .dropdown-menu:visited, .dropdown-menu:hover, .dropdown-menu:link, .dropdown-menu:active{
+    background-color: #09f !important;
+  }
+}
