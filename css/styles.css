@@ -1,7 +1,6 @@
 @media screen and (min-width: 480px){
-  .main{
-    background-color: #009;
-    padding-bottom: 500px;
+  body{
+    background-color: #009 !important;
   }
 
   .header{
@@ -34,7 +33,7 @@
     background-color: #007 !important;
   }
 
-  .navbar-nav > li:hover a:hover, li:focus a:focus, li:active a:active, li:active a:active{
+  .navbar-nav > li:hover a:hover{
     background-color: #06f !important;
   }
 
@@ -42,12 +41,12 @@
     color: #ddd !important;
   }
 
-  .dropdown-toggle, .dropdown-toggle:visited{
+  li:active a:active{
     background-color: #009 !important;
   }
 
-  .dropdown-toggle:active, .dropdown-toggle:hover, .dropdown-toggle:link{
-    background-color: #06f !important;
+  .dropdown-toggle:link, .dropdown-toggle:visited, .dropdown-toggle:hover, .dropdown-toggle:active{
+    background-color: #009 !important;
   }
 
   .dropdown-menu{
@@ -56,7 +55,74 @@
     box-shadow: 5px 5px 5px #000 !important;
   }
 
-  .dropdown-menu:visited, .dropdown-menu:hover, .dropdown-menu:link, .dropdown-menu:active{
-    background-color: #09f !important;
+  .dropdown-menu:link, .dropdown-menu:visited, .dropdown-menu:hover, .dropdown-menu:active{
+    background-color: #009 !important;
+  }
+
+  p{
+    color: white;
+    font-size: 26px;
+  }
+
+  .img > img{
+    float: left;
+    clear: right;
+    margin-right: 15px;
+  }
+
+  .img-par{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .par-link{
+    color: lightblue;
+  }
+
+  .par-link:visited, .par-link:hover, .par-link:active, .par-link:focus{
+    color: #99f;
+    text-decoration: none;
+  }
+
+  .main-header{
+    text-align: center;
+    color: #ddd;
+  }
+
+  .main-par{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .main-list{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    display: block;
+  }
+
+  .border{
+    border-bottom: 1px solid black;
+  }
+
+  .large{
+    font-size: 42px;
+  }
+
+  .med{
+    font-size: 30px;
+  }
+
+  .shaded-blue{
+    color: #39d;
+  }
+
+  #tutorial{
+    padding-bottom: 460px;
   }
 }

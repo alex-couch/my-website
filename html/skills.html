@@ -6,24 +6,51 @@
       <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
       <script src="../js/jquery.min.js"></script>
       <script src="../bootstrap/js/bootstrap.min.js"></script>
+      <link rel="icon" href="../imgs/pic-of-me-1.png">
   </head>
   <body>
     <div class="container-fluid main">
       <h1 class="header">Alex Couch</h1>
       <nav class="navbar navbar-blue">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Alex Couch</a>
-          </div>
           <ul class="nav navbar-nav">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="qual.html">Qualifications</a></li>
+            <li><a href="html/qual.html">Qualifications</a></li>
             <li class="active"><a>Skills</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="about_me.html">About Me</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="html/services.html#it_support">IT Support</a>
+                </li>
+                <li>
+                  <a href="html/services.html#web_dev">Website Development</a>
+                </li>
+                <li>
+                  <a href="html/services.html#tutorial">Code Tutorial (limited)</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </nav>
+      <div class="main container-fluid">
+        <h1 class="main-header">My Skills</h1>
+        <div class="main-list">
+          <ul class="main-list">
+            <li>Networking Debugging</li>
+            <li>Computer Repair</li>
+            <li>Software Debugging</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>HTML, CSS</li>
+            <li>Computer Part Assembly</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>

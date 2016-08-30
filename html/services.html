@@ -1,29 +1,93 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="../css/styles.css">
-      <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-      <script src="../js/jquery.min.js"></script>
-      <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="icon" href="../imgs/pic-of-me-1.png">
   </head>
   <body>
     <div class="container-fluid main">
       <h1 class="header">Alex Couch</h1>
       <nav class="navbar navbar-blue">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Alex Couch</a>
-          </div>
           <ul class="nav navbar-nav">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="qual.html">Qualifications</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li class="active"><a href="#">Services</a></li>
-            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="html/qual.html">Qualifications</a></li>
+            <li><a href="html/skills.html">Skills</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#it_support">IT Support</a>
+                </li>
+                <li>
+                  <a href="#web_dev">Website Development</a>
+                </li>
+                <li>
+                  <a href="#tutorial">Code Tutorial (limited)</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </nav>
+      <div class="main container-fluid">
+        <div class="border" id="it_support">
+          <h1 class="main-header">IT Support <span class="large shaded-blue">-$39.99USD</span></h1>
+          <br>
+          <br>
+          <p class="main-par">IT Support includes a wide range of variety from hardware to desktop support. From fixing a blue screen on your computer or helping you dust out your computer safely. I can help you with this for a small price of only $39.99USD. I can do field or remote support.
+          <br>
+          A list of platforms I can help with includes:
+          <br>
+          <ul class="main-list med">
+           <li>Windows</li>
+           <li>Android</li>
+           <li>iOS</li>
+           <li>Linux</li>
+          <li>Mac</li>
+        </ul>
+      </div>
+      <div class="border" id="web_dev">
+        <h1 class="main-header">Website Development <span class="large shaded-blue">-Up To $199.99USD - $259.99USD</span></h1>
+        <br>
+        <br>
+        <p class="main-par">Website Development is a service in which I build I website from scratch for you. You can choose different packages within this service plan. These include <span class="shaded-blue">personal and business</span>.
+        <br>
+        <br>
+        <span class="shaded-blue">Personal</span> websites are all about you; just like the website you are looking at right now, this one is a personal website. It is for an individual and is cheaper.
+        <br>
+        <br>
+        <span class="shaded-blue">Business</span> websites are sites for businesses, obviously ;). These sites are often going to be much more expensive because they are going to include networking programming, backend programming, and much more complicated stuff.
+        <br>
+        <br>
+        There are addons as well that you can have, and they are as follows:</p>
+        <ul class="main-list med">
+          <li>Network Security</li>
+          <li>Mobile/Desktop Flexibility</li>
+          <li>JavaScript</li>
+          <li>MySQL Injections</li>
+          <li>Ads</li>
+          <li>Servers</li>
+          <li>And More</li>
+        </ul>
+      </div>
+      <div class="border" id="tutorial">
+        <h1 class="main-header">Code Tutorial (Limited) <span class="large shaded-blue">-$39.99</span></h1>
+        <br>
+        <br>
+        <p class="main-par">My code tutorial service is a service in which I take a scheduled day to teach you how to code then I give you an assignment that will help you learn and retain the lessons learned. I <b>only</b> get you started for the first quarter then it is all independent study. This is only for a monthy price of $29.99USD. All lessons happen in skype group calls. You can learn these languages:
+        <br>
+        <ul class="main-list med">
+          <li>Java</li>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

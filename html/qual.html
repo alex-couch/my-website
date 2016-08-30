@@ -6,24 +6,39 @@
       <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
       <script src="../js/jquery.min.js"></script>
       <script src="../bootstrap/js/bootstrap.min.js"></script>
+      <link rel="icon" href="../imgs/pic-of-me-1.png">
   </head>
   <body>
     <div class="container-fluid main">
       <h1 class="header">Alex Couch</h1>
       <nav class="navbar navbar-blue">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Alex Couch</a>
-          </div>
           <ul class="nav navbar-nav">
             <li><a href="../index.html">Home</a></li>
             <li class="active"><a>Qualifications</a></li>
             <li><a href="skills.html">Skills</a></li>
-            <li><a href="services">Services</a></li>
-            <li><a href="about_me.html">About Me</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="html/services.html#it_support">IT Support</a>
+                </li>
+                <li>
+                  <a href="html/services.html#web_dev">Website Development</a>
+                </li>
+                <li>
+                  <a href="html/services.html#tutorial">Code Tutorial (limited)</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </nav>
+      <div class="main container-fluid">
+        <h1 class="main-header">My Qualifications</h1>
+        <br>
+        <p class="main-par">I am going to start with the basics: computers. I am qualified to do web development as I have at least one year of experience. I have done three semesters of web development in high school and I have taught myself JavaScript, <a class="par-link" href="http://www.php.net">PHP</a>, MySQL, and <a class="par-link" href="http://www.jquery.com">jQuery</a>. I have taken a semester of <a class="par-link" href="http://www.ktectraining.org">KTEC</a> and got myself started with a computer repair class and I am continuing my education with that on my own. I have been teaching myself advanced programming such as C++ and Java since I was 14 through Minecraft modding and I am now teaching myself raw coding.</p>
+      </div>
     </div>
   </body>
 </html>
