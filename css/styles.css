@@ -80,8 +80,8 @@
     color: lightblue;
   }
 
-  .par-link:hover, .par-link:focus, .par-link:link{
-    color: #09f;
+  .par-link:visited, .par-link:hover, .par-link:active, .par-link:focus{
+    color: #99f;
     text-decoration: none;
   }
 
@@ -101,9 +101,6 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-  }
-
-  .main-list{
     color: white;
     list-style-type: none;
     display: block;
@@ -111,15 +108,6 @@
 
   .border{
     border-bottom: 1px solid black;
-  }
-
-  #it_support_list{
-    color: white;
-    list-style-type: none;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 24px;
   }
 
   .large{
@@ -132,5 +120,9 @@
 
   .shaded-blue{
     color: #39d;
+  }
+
+  #tutorial{
+    padding-bottom: 460px;
   }
 }
