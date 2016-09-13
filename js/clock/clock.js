@@ -1,11 +1,13 @@
 var c = document.getElementById('canvas');
 var ctx = c.getContext('2d');
 
-ctx.strokeStyle = '#28d1fa';
+var red = '#FA5128';
+
+ctx.strokeStyle = red;
 ctx.lineWidth = 17;
 ctx.lineCap = 'round';
 ctx.shadowBlur = 15;
-ctx.shadowColor = '#28d1fa'
+ctx.shadowColor = red;
 
 function degreeToRad(degree){
 	var x = Math.PI/180;
@@ -28,13 +30,16 @@ function renderClock(){
 	renderArc(300, 200, 120, degreeToRad(270), degreeToRad((minute*6)-90));
 	renderArc(300, 200, 90, degreeToRad(270), degreeToRad((newSeconds*6)-90));
 
-	ctx.font = "20px Arial";
-	ctx.fillStyle = "#28d1fa";
-	ctx.fillText(now, c.width/2-270, 25);
+	renderArc(300, 200, 10, degreeToRad(270), degreeToRad(269));
 
-	ctx.font = "15px Arial";
-	ctx.fillStyle = "#28d1fa";
-	ctx.fillText("CouchDoesCode", c.width/2-65, c.height-10);
+	renderTextOnCanvas(now, "20px Arial", c.width/2-270, 25)
+	renderTextOnCanvas("CouchDoesCode" , "15px Arial", c.width/2-65, c.height-10);
+}
+
+function renderTextOnCanvas(text, font, x, y){
+	ctx.font = font;
+	ctx.fillStyle = red;
+	ctx.fillText(text, x, y);
 }
 
 function renderArc(x, y, radius, deg1, deg2){
