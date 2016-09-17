@@ -4,6 +4,8 @@ var ballX = 50;
 var ballY = 50;
 var ballSpeedX = 10;
 var ballSpeedY = 5;
+var width = 800;
+var height = 600;
 
 var paddle1Y = 250;
 var paddle2Y = 250;
@@ -54,6 +56,14 @@ function handleMouseClick(evt){
 		player2Score = 0;
 		showWinScreen = false;
 		console.log("Restarting");
+	}
+}
+
+function detectMobilePlatform(){
+	if(navigator.platform == 'Android'){
+		return true;
+	}else{
+		return false;
 	}
 }
 
@@ -108,6 +118,15 @@ function reset(){
 }
 
 function drawEverything(){
+	if(detectMobilePlatform()){
+		var mq = window.matchMedia("(orientation: landscape)");
+		if(mq.matches){
+			width = window.width;
+			height = window.height;
+		}
+	}
+	canvas.width = width;
+	canvas.height = height;
 	if(showWinScreen){
 		colorRect(0, 0, canvas.width, canvas.height, 'black');
 		if(player1Score >= WINNING_SCORE){
